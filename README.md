@@ -1,7 +1,7 @@
 # Fibonacci-Recursivo
 Programa que devolve o n-ésimo elemento da sequência de Fibonacci solicitado ao rodar o programa utilizando algoritmo recursivo.
 <h2>Como rodar o programa</h2>
-Foi utilizado o pipenv, então basta clonar o repositório e executar pipenv install estando no diretório do projeto.
+Foi utilizado o <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock">pipenv</a>, então basta clonar o repositório e executar pipenv install estando no diretório do projeto.
 
 Depois de instalado, basta executar o programa utilizando o nome do arquivo e o n-ésimo termo da sequência de Fibonacci que se queira saber o valor.
 Exemplo: 'python RecursiveFibonacci 5'
