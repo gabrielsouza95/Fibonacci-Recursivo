@@ -1,15 +1,24 @@
 # Fibonacci-Recursivo
 Programa que devolve o n-ésimo elemento da sequência de Fibonacci solicitado ao rodar o programa utilizando algoritmo recursivo.
+<h2>Como rodar o programa</h2>
+Foi utilizado o pipenv, então basta clonar o repositório e executar pipenv install estando no diretório do projeto.
 
+Depois de instalado, basta executar o programa utilizando o nome do arquivo e o n-ésimo termo da sequência de Fibonacci que se queira saber o valor.
+Exemplo: 'python RecursiveFibonacci 5'
+
+Obs 1: Não recomendado calcular valores n-ésimos muito grandes.
+Obs 2: Passar somente valores inteiros positivos para o programa.
+
+<h2>Sobre o algoritmo</h2>
 O algoritmo recursivo tem como base a utilização de funções que chamem a elas próprias. Esses algoritmos geralmente são mais simples que suas contra partes não recursivas, mas podem demandar muito recurso rapidamente.
 
 No caso do algoritmo de cálculo do n-ésimo elemento de Fibonacci, a recurção para e começa a calcular o resultado quando o número chega em 1 ou 0 e começa a voltar nas chamadas para terminar, como pode ser visto na parte que faz esse cálculo:
   
-def recursive_fibo(self, n_esimo):
+    def recursive_fibo(self, n_esimo):
 
-    if n_esimo == 1 or n_esimo == 0 :
-        return n_esimo               
-    return self.recursive_fibo(n_esimo - 1) + self.recursive_fibo(n_esimo - 2)  
+        if n_esimo == 1 or n_esimo == 0 :
+            return n_esimo               
+        return self.recursive_fibo(n_esimo - 1) + self.recursive_fibo(n_esimo - 2)  
 
 Por exemplo, ao calcular o valor de 5, ao entrar pela primeira vez n função, 5 não é 1 nem 0, então chama a própria função com 4 para depois somar com o resultado da função chamando com 3. Ao entrar com 4, ele chama a ela própria com 3 e com 2 e ao entrar com 3 ele chama a ela própria com 2 e com 1.
 
